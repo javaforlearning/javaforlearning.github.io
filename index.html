@@ -68,16 +68,54 @@
     <div class="container-fluid">
       <div class="row">
         <!-- HyperLink Section 1 -->
-        <div class="col-2">Links
+        <div class="col-2">
+          <section>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+               Programs
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Reverse String By Preserving Order</a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+            </div>
+          </section>
         </div>
 
         <!-- Main Data Setion-->
-        <div class="col-8">Java
-         
+        <div class="col-8">
+         <section>
+           <pre>
+         Program to Reverse A String BY Preserving its Oder
+         <code>
+            public class ReverseStringByPreservingOrder {
+              public static void main(String[] args) {		
+                String str = "I Love Java";
+                reverseStringByReservingOrder(str);
+              }
+              private static void reverseStringByReservingOrder(String str) {
+                String[] split = str.split(" ");
+                for(int i=0;i<split.length;i++) {
+                  String s = "";
+                  for(int j=split[i].length()-1;j>=0;j--) {
+                    s+=split[i].charAt(j);
+                  }
+                  System.out.print(s+" ");
+                }
+              }
+            }
+         </code>
+        </pre>
+         </section>
         </div>
 
         <!-- HyperLink Section For Adds -->
-        <div class="col-2">col-3</div>
+        <div class="col-2">
+          <section>
+            <p>Our sponsers</p>
+            <img src="cover.gif" height="400" width="300">
+          </section>
+        </div>
       </div>
     </div>
 
